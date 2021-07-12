@@ -8,6 +8,7 @@
       <li><router-link to="/demo4"><button>Demo4 Compute</button></router-link></li>
       <li><router-link to="/demo5"><button>Demo5 Compute</button></router-link></li>
       <li><router-link to="/demo6"><button>Demo6 Compute</button></router-link></li>
+      <li><router-link to="/demo7"><button>Demo7 Clock</button></router-link></li>
     </ul>
     </div>
 </template>

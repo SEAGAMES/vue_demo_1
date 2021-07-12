@@ -1,12 +1,12 @@
 <template>
   <div id = "app">
-    <Header/>
-
-    <div class="content-wrapper">
-      <router-view></router-view>
-    </div>
-    
-    <Footer @onClock="onClock" title="Copyright 2021 by GAME-IT Ltd." color="gray"/>
+    <Header />
+    <Content />
+    <Footer 
+    @onClock="onClock" 
+    title="Copyright 2021 by GAME-IT Ltd." 
+    color="gray"
+    />
     <span class="clock">{{time}}</span>
     
     <!-- <span class='title'>123</span> -->
@@ -17,15 +17,18 @@
 <script>
 import Header from "@/components/layout/Header.vue"
 import Footer from "../src/components/layout/Footer.vue"
+import Content from "../src/components/layout/Content.vue"
 import moment from "moment" ;
 
+
+
 export default {
-  components: { Header , Footer },
+  components: { Header , Footer, Content },
   name : "app" , 
   methods: {
     onClock(value) {
       //this.time = value
-      this.time = moment(value).format('MM/DD/YYYY hh:mm:ss')
+      this.time = moment(value).format('MM/DD/YYYY hh:mm:ss') ;
     }
   },  
   data() {
@@ -44,13 +47,7 @@ export default {
   .clock{
     font-size: 12px ;
   }
-  .content-wrapper{
-    margin: 24px;
-    padding: 24px;
-    border-width: 1px;
-    border-color: gray ;
-    border-style : dashed ;
-  }
+  
 
 </style>
 
