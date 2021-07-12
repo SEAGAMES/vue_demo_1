@@ -1,14 +1,13 @@
 <template>
   <div id = "app">
-    <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/demo1">Demo1 Intro</router-link></li>
-      <li><router-link to="/demo2">Demo2 Events</router-link></li>
-      <li><router-link to="/demo3">Demo3 Data</router-link></li>
-      <li><router-link to="/demo4">Demo4 Compute</router-link></li>
-      <li><router-link to="/demo5">Demo5 Compute</router-link></li>
-    </ul>
-    <router-view></router-view>
+    <Header/>
+
+    <div class="content-wrapper">
+      <router-view></router-view>
+    </div>
+    
+    <Footer @onClock="onClock" title="Copyright 2021 by GAME-IT Ltd." color="gray"/>
+    <span class="clock">{{time}}</span>
     
     <!-- <span class='title'>123</span> -->
   
@@ -16,24 +15,41 @@
 </template>
 
 <script>
+import Header from "@/components/layout/Header.vue"
+import Footer from "../src/components/layout/Footer.vue"
+import moment from "moment" ;
+
 export default {
+  components: { Header , Footer },
   name : "app" , 
+  methods: {
+    onClock(value) {
+      //this.time = value
+      this.time = moment(value).format('MM/DD/YYYY hh:mm:ss')
+    }
+  },  
+  data() {
+    return {
+      time : ""
+    }
+  }
 }
 </script>
   
 <style scoped>
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  li{
-    display: inline ;
-    margin: 8px;
-  }
-
   .title{
     font-size : 30px ;
     color : green ;
+  }
+  .clock{
+    font-size: 12px ;
+  }
+  .content-wrapper{
+    margin: 24px;
+    padding: 24px;
+    border-width: 1px;
+    border-color: gray ;
+    border-style : dashed ;
   }
 
 </style>
