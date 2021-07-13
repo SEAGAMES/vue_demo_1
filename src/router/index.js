@@ -7,6 +7,12 @@ import Demo4 from '../views/Demo4_Compute.vue'
 import Demo5 from '../views/Demo5_Binding.vue'
 import Demo6 from '../views/Demo6_Form.vue'
 import Demo7 from '../views/Demo7_Slot.vue'
+import Demo8 from '../views/Demo8_Condition.vue'
+import Demo9 from '../views/Demo9_Loop.vue'
+import Demo10 from '../views/Demo10_LifecycleHook.vue'
+import Demo11 from '../views/Demo11_Variable_and_State.vue'
+import Demo12 from '../views/Demo12_Ref.vue'
+import Demo13 from '../views/Demo13_Fillters.vue'
 
 
 
@@ -51,6 +57,36 @@ const routes = [
     path: '/demo7' ,
     name: 'demo7' ,
     component : Demo7
+  },
+  {
+    path: '/demo8' ,
+    name: 'demo8' ,
+    component : Demo8
+  },
+  {
+    path: '/demo9' ,
+    name: 'demo9' ,
+    component : Demo9
+  },
+  {
+    path: '/demo10' ,
+    name: 'demo10' ,
+    component : Demo10
+  },
+  {
+    path: '/demo11' ,
+    name: 'demo11' ,
+    component : Demo11
+  },
+  {
+    path: '/demo12' ,
+    name: 'demo12' ,
+    component : Demo12
+  },
+  {
+    path: '/demo13' ,
+    name: 'demo13' ,
+    component : Demo13
   },
 
 ]

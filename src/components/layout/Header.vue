@@ -6,9 +6,15 @@
       <li><router-link to="/demo2"><button>Demo2 Events</button></router-link></li>
       <li><router-link to="/demo3"><button>Demo3 Data</button></router-link></li>
       <li><router-link to="/demo4"><button>Demo4 Compute</button></router-link></li>
-      <li><router-link to="/demo5"><button>Demo5 Compute</button></router-link></li>
-      <li><router-link to="/demo6"><button>Demo6 Compute</button></router-link></li>
-      <li><router-link to="/demo7"><button>Demo7 Clock</button></router-link></li>
+      <li><router-link to="/demo5"><button>Demo5 Binding</button></router-link></li>
+      <li><router-link to="/demo6"><button>Demo6 Form & V-model</button></router-link></li>
+      <li><router-link to="/demo7"><button>Demo7 V-slot</button></router-link></li>
+      <li><router-link to="/demo8"><button>Demo8 Conition</button></router-link></li>
+      <li><router-link to="/demo9"><button>Demo9 Loop</button></router-link></li>
+      <li><router-link to="/demo10"><button>Demo10 LifeCycle</button></router-link></li>
+      <li><router-link to="/demo11"><button>Demo11 Variable and State</button></router-link></li>
+      <li><router-link to="/demo12"><button>Demo12 Ref</button></router-link></li>
+      <li><router-link to="/demo13"><button>Demo13 Fillters</button></router-link></li>
     </ul>
     </div>
 </template>
